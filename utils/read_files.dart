@@ -6,6 +6,6 @@ Future<List<String>> readLinesOfFileFromPath(String path) async {
     return await linesOfFile;
   } catch (e) {
     print("Ocurred an error when tried to read file: $e");
-    return [];
+    exit(0);
   }
 }
